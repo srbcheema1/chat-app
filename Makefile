@@ -9,6 +9,3 @@ compile:
 
 clean:
 	rm *pb2*
-
-cpp:
-	g++ --std=c++11 ./spike/cpp/demo_main.cpp -lboost_filesystem -lboost_program_options -lboost_system -o bin/vcf_demo
