@@ -1,0 +1,4 @@
+bin/out/
+
+# compiled proto files
+*pb2*

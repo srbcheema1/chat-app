@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message String {
+    string value = 1;
+}
+
+message Number {
+    uint32 value = 1;
+}
+
+message Empty {}
+
+service Validator {
+    rpc Validate (stream String) returns (Empty) {}
+    rpc Get_result (Empty) returns (stream String) {}
+    rpc Get_user_id (Empty) returns (Number) {}
+}
